@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="age"></p>
+
+    <script>
+        let text = ""
+        let barth = ""
+        let i = 0;
+
+        do {
+            text = prompt("plz put your valid name here");
+            barth = prompt("plz put your year here");
+            barth = Number(barth); i++;
+        }
+        while ((i < 3) && (!isNaN(text) || isNaN(barth) || barth > 2010 || barth < 1910))
+        // document.getElementById("demo").innerHTML = text;
+        // document.getElementById("demo2").innerHTML = barth;
+
+        if (!isNaN(text) || isNaN(barth)) {
+            text = "error valid name and year"
+            document.getElementById("demo").innerHTML = text;
+        }
+        else {
+            document.getElementById("demo").innerHTML = "Name: " + text;
+            document.getElementById("demo2").innerHTML = "Birth year: " + barth;
+            let age = 2022 - barth;
+            document.getElementById("age").innerHTML = "Age: " + age
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day1 task</title>
+</head>
+<!-- <body>
+<h3>A demonstration of how to access a Text Field</h3>
+
+<input type="text" id="myText" >
+
+<p>Enter a number of temperatures and press the button below to enter a number of temperatures</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p> -->
+
+<!-- <script>
+// function myFunction() {
+//   var x = document.getElementById("myText").value;
+// //   x=Number(x);
+// //   if (x===NaN){
+// //     document.getElementById("demo").innerHTML="erorr" 
+// //   }
+//   function temperature(x){
+//     return x >= 30?"cold":"hot";
+//   }
+//   document.getElementById("demo").innerHTML = temperature();
+// }
+</script> -->
+<script>
+    // the 1 task
+    let temperature = prompt("Enter a number of temperatures and press the button below to enter a number of temperatures");
+    temperature = Number(temperature);
+    if (isNaN(temperature)) console.log("erorr");
+
+    else temperature >= 30 ? console.log("COLD") : console.log("HOT")
+
+    // the 2ed task
+    // for (let i = 0; i < 3; i++) {
+    //     let name = prompt("Enter your name")
+    //     let barthday = prompt("enter your barthday");
+    //     isNaN(name) ? console.log("this a string ") : console.log("is not a string");
+    //     if (name == "is not a string" && barthday <= 2010) {
+    //         console.log("plz enter valid age")
+    //     }
+    //     else {
+
+    //     }
+    // }
+    // //  if ( barthday >= 2010){
+    // //     for (let i = 0; i < 3; i++ ){
+
+    // //  }
+
+    // isNaN(barthday) ? console.log("not a number") : console.log("is a number");
+    // barthday = Number(barthday)
+
+</script>
+</body>
+
+</html>
