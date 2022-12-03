@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 1</title>
+</head>
+
+<body>
+    <p id="out"></p>
+    <script>
+
+function sumArray(array) {
+  let sum = 0; 
+
+/*Go through each item in the array and execute this function which adds
+each item to sum 
+*/
+  array.forEach(item => {
+    sum += item;
+  });
+
+  console.log(sum); 
+  return sum;
+}
+
+  let nums= ["1", "4", "0", "9", "-3"]
+  Number(nums)
+//   let n = nums.forEach( it => {
+//     Number(it))
+sumArray(nums); //logs 11
+
+// sumArray([1, 4, 0, 9, -3]); //logs 11
+
+// document.getElementById("out").innerHTML=sumArr(arr);
+
+        // let inputt = prompt("put your numbers ")
+        // // let ansowr = sumArr(inputt)
+        // var ansowr
+        // for (let i; i < inputt.length; i++) {
+        //     ansowr += inputt[i];
+        // }
+        // console.log(ansowr)
+       
+        // let outF = prompt(`enter first element`);
+        // let outS = prompt(`enter second element`);
+        // let outB = prompt(`enter third element`);
+        // let sumM = Number(outF) + Number(outS) + Number(outB)
+        // if (isNaN(sumM))
+        //     document.getElementById("out").innerHTML = "plz put a number ";
+        // else
+        //     document.getElementById("out").innerHTML = `your summition is : ${sumM}`;
+    </script>
+</body>
+
+</html>

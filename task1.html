@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        function sum(a) {
+            count = 0
+            for (let i = 0; i < a.length; i++) {
+                Number(a[i])
+                count += a[i]
+            }
+            return count
+
+        }
+        let inp = prompt("put numbers")
+        let arr = [...inp];
+        // for (let i = 0; i < arr.length; i++) {
+        //     Number(arr[i])
+        // }
+        var nums = arr.map(function (str) {
+            // using map() to convert array of strings to numbers
+
+            return parseInt(str);
+        });
+        console.log(typeof nums[0])
+        console.log(sum(nums))
+    </script>
+</body>
+
+</html>
