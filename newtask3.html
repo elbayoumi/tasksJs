@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new window task 3 day 3</title>
+</head>
+
+<body>
+    <p id="par"></p>
+</body>
+<script>
+    var myname = "mohamed ashraf elbayoumi abouelenein";
+    var arr = [...myname]
+    var i = 0;
+    function myArr() {
+
+        arr[i];
+        document.getElementById('par').innerHTML += arr[i]
+        i++;
+    }
+    setInterval(myArr, 1000);
+
+    // function settim(n) {
+    //     setTimeout(myarr(n), 3000);
+    // }
+
+    // console.log([...arr].join(''))
+    // function mtime(m) {
+    //     for (var i = 0; i < m.length; i++) {
+    // setTimeout(m[i], 3000)
+    //     }
+    // }
+    // document.getElementById('par').innerHTML = mtime([...arr].join(''))
+    // settim(...arr.join(""))
+</script>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 2 day 3</title>
+</head>
+
+<body>
+    <button id="clock">Start clock</button>
+    <p id="dis"></p>
+    <p id="time"></p>
+</body>
+<script>
+
+    const alirt = () => { alert("Clock Started"); }
+
+    const ddate = () => {
+        const date = new Date().toISOString();
+        document.getElementById('dis').innerHTML = date;
+    }
+    // let format2 = day + "/" + month + "/" + year;
+    const setint = () => {
+        setInterval(ddate, 1000)
+    }
+
+    document.getElementById('clock').addEventListener('click', alirt);
+    document.getElementById('clock').addEventListener('click', setint);
+</script>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task3 day 3</title>
+</head>
+
+<body>
+    <button id="child">child</button>
+    <button id="close">close child</button>
+</body>
+<script>
+    // const parant = document.getElementById('parant').innerHTML = `parant`
+    // const child = document.getElementById('child').innerHTML = `child`
+
+    var windo;
+    function disp1() {
+        windo = window.open("./newtask3.html", "", "_blank")
+    }
+    // const myTimeout = setTimeout(windo, 5000);
+    function loaded() {
+
+        window.setTimeout(disp1, 3000);
+    }
+
+
+    const close = () => {
+        windo.close()
+    }
+    // setTimeout
+    document.getElementById("child").addEventListener("click", loaded);
+    document.getElementById("close").addEventListener("click", close);
+</script>
+
+</html>
